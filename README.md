@@ -9,6 +9,8 @@ This work starts from studying the training dynamics of PINNs via the nerual tan
 
 Inspired by findings, we proposed the PIRBN, which can exhibit the local property intuitively. It has been demonstrated that the NTK theory is applicable for PIRBN. Besides, other PINN techniques can be directly migrated to PIRBNs.
 
+***Important: We are currently summarising all the code. We will make them available here soon!***
+
 Numerical examples include:
  - 1D sine funtion (**Eq. 15** in the manuscript)
  
@@ -52,14 +54,14 @@ Numerical examples include:
 For more details in terms of mathematical proofs and numerical examples, please refer to our paper.
 
 # Paper link
-https://arxiv.org/abs/xxxx.xxxxx
+https://arxiv.org/abs/2304.06234
 
 # Enviornmental settings
  - TensorFlow  2.8.0 
  - Keras       2.8.0
 
 # Cite as
-[1] J. Bai, G.-R. Liu, A. Gupta, L. Alzubaidi, X.-Q. Feng, Y. Gu, Physics-informed radial basis network (PIRBN): A local approximation neural network for solving nonlinear PDEs, Arxiv preprint  arXiv:xxxx.xxxxx, (2023).
+[1] J. Bai, G.-R. Liu, A. Gupta, L. Alzubaidi, X.-Q. Feng, Y. Gu, Physics-informed radial basis network (PIRBN): A local approximation neural network for solving nonlinear PDEs, Arxiv preprint  arXiv:2304.06234, (2023).
 
 # Contact us
 For questions regarding the code, please contact:
