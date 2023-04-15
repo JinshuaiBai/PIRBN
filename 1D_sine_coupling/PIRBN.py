@@ -10,7 +10,7 @@ def PIRBN(rbn):
     ====================================================================================================================
     """
 
-    ### declare PINN's inputs
+    ### declare PIRBN's inputs
     xy = tf.keras.layers.Input(shape=(1,))
     xy_b = tf.keras.layers.Input(shape=(1,))
     
@@ -21,7 +21,7 @@ def PIRBN(rbn):
     ### obtain partial derivatives of u with respect to x
     _, u_xx = Dif_u(xy)
     
-    ### build up the PINN
+    ### build up the PIRBN
     pirbn = tf.keras.models.Model(inputs=[xy, xy_b], outputs=[u_xx, u_b])
         
     return pirbn
