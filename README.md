@@ -9,7 +9,7 @@ This work starts from studying the training dynamics of PINNs via the nerual tan
 
 Inspired by findings, we proposed the PIRBN, which can exhibit the local property intuitively. It has been demonstrated that the NTK theory is applicable for PIRBN. Besides, other PINN techniques can be directly migrated to PIRBNs.
 
-***Important: We are currently summarising all the code. We will make them available here soon!***
+***Important: We are currently summarising all the code. We are updating the code one by one. We will make them available here soon!***
 
 Numerical examples include:
  - 1D sine funtion (**Eq. 15** in the manuscript)
