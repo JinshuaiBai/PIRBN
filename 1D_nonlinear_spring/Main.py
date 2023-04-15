@@ -35,7 +35,7 @@ rbn = RBN_Net(n_in, n_out, n_neu, b, c).build()
 ### Set up PIRBN
 pirbn = PIRBN(rbn)
 
-#%%
+### Train the PIRBN
 opt = Adam(pirbn, x, y, learning_rate = 0.001, maxiter=40001)
 result=opt.fit()
 
@@ -52,4 +52,4 @@ plt.legend(['predict','ground truth'])
 plt.show()
 
 ### Save data
-scipy.io.savemat('out.mat', {'NTK': a, 'x': xy, 'y': y})
+scipy.io.savemat('out.mat', {'x': xy, 'y': y})
