@@ -16,8 +16,8 @@ class RBN_Net:
         [n_in]      [int]                   : Number of input of the RBN.
         [n_out]     [int]                   : Number of output of the RBN.
         [n_neu]     [int]                   : Number of neurons in the hidden layer.
-        [c]         [array of float 32]     : Initial value for hyperparameter c.
         [b]         [array of float 32]     : Initial value for hyperparameter b.
+        [c]         [array of float 32]     : Initial value for hyperparameter c.
         
         ================================================================================================================
         """
@@ -25,8 +25,8 @@ class RBN_Net:
         self.n_in = n_in
         self.n_out = n_out
         self.n_neu = n_neu
-        self.c = c
         self.b = b
+        self.c = c
         
     def net(self):
         ### Setup the input layer of the RBN
