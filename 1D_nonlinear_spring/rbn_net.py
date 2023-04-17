@@ -29,13 +29,13 @@ class RBN_Net:
         self.b = b
         
     def net(self):
-        ### Setup the input layer of the FNN
+        ### Setup the input layer of the RBN
         x = tf.keras.layers.Input(shape=(self.n_in))
         l1 = RBF_layer1(self.n_neu, self.c)
         temp = l1(x)
         y = tf.keras.layers.Dense(self.n_out, kernel_initializer='LecunNormal', use_bias = False)(temp)
     
-        ### Combine the input, hidden, and output layers to build up a FNN
+        ### Combine the input, hidden, and output layers to build up a RBN
         rbn = tf.keras.models.Model(inputs=x, outputs=y)
         
         return rbn
