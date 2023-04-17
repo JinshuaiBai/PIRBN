@@ -68,9 +68,9 @@ class RBF_layer1(tf.keras.layers.Layer):
         self.c = c
     
     def build(self, input_shape):
-        w_init = tf.random_normal_initializer()
+        b_init = tf.random_normal_initializer()
         self.b = tf.Variable(
-            initial_value=w_init(shape=(input_shape[-1], self.n_neu),
+            initial_value=b_init(shape=(input_shape[-1], self.n_neu),
                                  dtype='float32'),
             trainable=True)
         
