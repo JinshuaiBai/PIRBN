@@ -25,8 +25,8 @@ class RBN_Net:
         self.n_in = n_in
         self.n_out = n_out
         self.n_neu = n_neu
-        self.c = c
         self.b = b
+        self.c = c
         
     def net(self):
         ### Setup the input layer of the RBN
