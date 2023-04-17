@@ -13,11 +13,11 @@ class RBN_Net:
 
         Name        Type                    Info.
 
-        [n_in]      [Keras model]           : Number of input of the RBN.
-        [n_out]     [Keras model]           : Number of output of the RBN.
-        [n_neu]     [Keras model]           : Number of neurons in the hidden layer.
-        [c]         [Keras model]           : Initial value for hyperparameter c.
-        [b]         [Keras model]           : Initial value for hyperparameter b.
+        [n_in]      [int]                   : Number of input of the RBN.
+        [n_out]     [int]                   : Number of output of the RBN.
+        [n_neu]     [int]                   : Number of neurons in the hidden layer.
+        [c]         [array of float 32]     : Initial value for hyperparameter c.
+        [b]         [array of float 32]     : Initial value for hyperparameter b.
         
         ================================================================================================================
         """
