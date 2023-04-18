@@ -26,8 +26,8 @@ for i in range(ns):
 xy_t = np.hstack([np.linspace(0, 1, n).reshape(n, 1).astype(np.float32), \
                       np.ones((n, 1)).astype(np.float32)])
 xy_b = np.hstack([np.linspace(0, 1, n).reshape(n, 1).astype(np.float32), \
-                  np.ones((n, 1)).astype(np.float32)])
-xy_l = np.hstack([np.ones((n, 1)).astype(np.float32), \
+                  np.zeros((n, 1)).astype(np.float32)])
+xy_l = np.hstack([np.zeros((n, 1)).astype(np.float32), \
               np.linspace(0, 1, n).reshape(n, 1).astype(np.float32)])
 xy_r = np.hstack([np.ones((n, 1)).astype(np.float32), \
               np.linspace(0, 1, n).reshape(n, 1).astype(np.float32)])
