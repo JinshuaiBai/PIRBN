@@ -1,8 +1,8 @@
 import tensorflow as tf
 
 def cal_adapt(pirbn, x):
-    lamda_g = 1.
-    lamda_b = 1.
+    lamda_g = 0.
+    lamda_b = 0.
     lamda_l_1 = 0.
     lamda_l_2 = 0.
     n_neu = len(pirbn.get_weights()[1])
