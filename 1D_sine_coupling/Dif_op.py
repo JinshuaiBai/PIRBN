@@ -4,7 +4,7 @@ class Dif(tf.keras.layers.Layer):
     """
     ====================================================================================================================
 
-    This is the class for calculating the differential terms of the FNN's output with respect to the FNN's input. We
+    This is the class for calculating the differential terms of the RBN's output with respect to the RBN's input. We
     adopt the GradientTape function provided by the TensorFlow library to do the automatic differentiation.
     This class include 2 functions, including:
         1. __init__()         : Initialise the parameters for differential operator;
@@ -13,7 +13,7 @@ class Dif(tf.keras.layers.Layer):
     ====================================================================================================================
     """
 
-    def __init__(self, fnn, **kwargs):
+    def __init__(self, rbn, **kwargs):
         """
         ================================================================================================================
 
@@ -23,11 +23,11 @@ class Dif(tf.keras.layers.Layer):
 
         Name        Type                    Info.
 
-        [fnn]       [Keras model]           : The Feedforward Neural Network.
+        [rbn]       [Keras model]           : The Feedforward Neural Network.
         
         ================================================================================================================
         """
-        self.fnn = fnn
+        self.rbn = rbn
         super().__init__(**kwargs)
 
     def call(self, x):
@@ -41,7 +41,7 @@ class Dif(tf.keras.layers.Layer):
         Name        Type                    Info.
 
         [x]         [Keras model]           : The coordinate array;
-        [temp]      [Keras tensor]          : The intermediate output from the FNN;
+        [temp]      [Keras tensor]          : The intermediate output from the RBN;
         [u]         [Keras tensor]          : The displacement predictions;
         [u_x]       [Keras tensor]          : The first-order derivative of the u with respect to the x;
         [u_xx]      [Keras tensor]          : The second-order derivative of the u with respect to the x.
@@ -55,8 +55,8 @@ class Dif(tf.keras.layers.Layer):
             with tf.GradientTape(persistent=True) as g:
                 g.watch(x)
 
-                ### Obtain the intermediate output from the FNN
-                u = self.fnn(x)
+                ### Obtain the intermediate output from the RBN
+                u = self.rbn(x)
 
             ### Obtain the first-order derivative of the output with respect to the input
             u_x = g.gradient(u, x)
