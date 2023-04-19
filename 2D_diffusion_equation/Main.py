@@ -8,9 +8,9 @@ import scipy.io
 from rbf_net import RBF_Net
 
 ### function to calculate the ground truth result
-def func(x):
-    y1 = (2*np.cos(np.pi*x[...,0,np.newaxis]+np.pi/5.)+3/2*np.cos(2*np.pi*x[...,0,np.newaxis]-3*np.pi/5.))
-    y2 = (2*np.cos(np.pi*x[...,1,np.newaxis]+np.pi/5.)+3/2*np.cos(2*np.pi*x[...,1,np.newaxis]-3*np.pi/5.))
+def func(xt):
+    y1 = (2*np.cos(np.pi*xt[...,0,np.newaxis]+np.pi/5.)+3/2*np.cos(2*np.pi*xt[...,0,np.newaxis]-3*np.pi/5.))
+    y2 = (2*np.cos(np.pi*xt[...,1,np.newaxis]+np.pi/5.)+3/2*np.cos(2*np.pi*xt[...,1,np.newaxis]-3*np.pi/5.))
     y = y1 * y2
     
     return y
@@ -81,14 +81,14 @@ y=rbn(xt)
 
 fig1 = plt.figure(1)
 ground_truth = func(xt)
-plt.scatter(xt[:,0],xt[:,1],s=1,c=ground_truth,cmap='jet',vmin=-6,vmax=11)
+plt.scatter(xt[:,0],xt[:,1],s=5,c=ground_truth,cmap='jet',vmin=-6,vmax=11)
 plt.axis('equal')
 plt.colorbar()
 plt.title('Ground Truth')
 plt.show()
 
 fig2 = plt.figure(2)
-plt.scatter(xt[:,0],xt[:,1],s=1,c=y,cmap='jet',vmin=-6,vmax=11)
+plt.scatter(xt[:,0],xt[:,1],s=5,c=y,cmap='jet',vmin=-6,vmax=11)
 plt.axis('equal')
 plt.colorbar()
 plt.title('PIRBN')
