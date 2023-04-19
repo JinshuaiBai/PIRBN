@@ -43,8 +43,8 @@ class Dif(tf.keras.layers.Layer):
         [xt]        [Keras tensor]          : The coordinate array;
         [U]         [Keras tensor]          : The displacement predictions;
         [U_x]       [Keras tensor]          : The first-order derivative of the U with respect to the x;
-        [U_xx]      [Keras tensor]          : The second-order derivative of the U with respect to the x.
-        [U_t]       [Keras tensor]          : The first-order derivative of the U with respect to the t;
+        [U_xx]      [Keras tensor]          : The second-order derivative of the U with respect to the x;
+        [U_t]       [Keras tensor]          : The first-order derivative of the U with respect to the t.
 
         ================================================================================================================
         """
