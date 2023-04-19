@@ -41,7 +41,6 @@ class Dif(tf.keras.layers.Layer):
         Name        Type                    Info.
 
         [x]         [Keras model]           : The coordinate array;
-        [temp]      [Keras tensor]          : The intermediate output from the RBN;
         [u]         [Keras tensor]          : The displacement predictions;
         [u_x]       [Keras tensor]          : The first-order derivative of the u with respect to the x;
         [u_xx]      [Keras tensor]          : The second-order derivative of the u with respect to the x.
@@ -55,7 +54,7 @@ class Dif(tf.keras.layers.Layer):
             with tf.GradientTape(persistent=True) as g:
                 g.watch(x)
 
-                ### Obtain the intermediate output from the RBN
+                ### Obtain the output from the RBN
                 u = self.rbn(x)
 
             ### Obtain the first-order derivative of the output with respect to the input
