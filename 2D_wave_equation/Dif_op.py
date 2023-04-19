@@ -40,11 +40,12 @@ class Dif(tf.keras.layers.Layer):
 
         Name        Type                    Info.
 
-        [x]         [Keras model]           : The coordinate array;
+        [xy]        [Keras tensor]          : The coordinate array;
         [temp]      [Keras tensor]          : The intermediate output from the RBN;
-        [u]         [Keras tensor]          : The displacement predictions;
-        [u_x]       [Keras tensor]          : The first-order derivative of the u with respect to the x;
-        [u_xx]      [Keras tensor]          : The second-order derivative of the u with respect to the x.
+        [U]         [Keras tensor]          : The displacement predictions;
+        [U_x]       [Keras tensor]          : The first-order derivative of the U with respect to the x;
+        [U_xx]      [Keras tensor]          : The second-order derivative of the U with respect to the x;
+        [U_yy]      [Keras tensor]          : The second-order derivative of the U with respect to the y.
 
         ================================================================================================================
         """
