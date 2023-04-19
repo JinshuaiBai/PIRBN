@@ -55,7 +55,7 @@ class Dif(tf.keras.layers.Layer):
             with tf.GradientTape(persistent=True) as g:
                 g.watch(x)
 
-                ### Obtain the intermediate output from the RBN
+                ### Obtain the output from the RBN
                 u = self.rbn(x)
 
             ### Obtain the first-order derivative of the output with respect to the input
