@@ -57,6 +57,8 @@ https://arxiv.org/abs/2304.06234
 # Enviornmental settings
  - TensorFlow  2.8.0 
  - Keras       2.8.0
+ - SciPy       1.8.0
+ - Matplotlib  3.6.0
 
 # Cite as
 [1] J. Bai, G.-R. Liu, A. Gupta, L. Alzubaidi, X.-Q. Feng, Y. Gu, Physics-informed radial basis network (PIRBN): A local approximation neural network for solving nonlinear PDEs, Arxiv preprint  arXiv:2304.06234, (2023).
