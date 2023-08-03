@@ -53,8 +53,6 @@ For more details in terms of mathematical proofs and numerical examples, please 
 
 # Paper link
 https://doi.org/10.1016/j.cma.2023.116290  
-or  
-https://arxiv.org/abs/2304.06234
 
 # Enviornmental settings
  - TensorFlow  2.8.0 
@@ -63,9 +61,7 @@ https://arxiv.org/abs/2304.06234
  - Matplotlib  3.6.0
 
 # Cite as
-[1] J. Bai, G.-R. Liu, A. Gupta, L. Alzubaidi, X.-Q. Feng, Y. Gu, Physics-informed radial basis network (PIRBN): A local approximation neural network for solving nonlinear PDEs, Computer Methods in Applied Mechanics and Engineering, 415 (2023).  
-or  
-[1] J. Bai, G.-R. Liu, A. Gupta, L. Alzubaidi, X.-Q. Feng, Y. Gu, Physics-informed radial basis network (PIRBN): A local approximation neural network for solving nonlinear PDEs, Arxiv preprint  arXiv:2304.06234, (2023).
+[1] J. Bai, G.-R. Liu, A. Gupta, L. Alzubaidi, X.-Q. Feng, Y. Gu, Physics-informed radial basis network (PIRBN): A local approximation neural network for solving nonlinear PDEs, Computer Methods in Applied Mechanics and Engineering, 415 (2023). 
 
 # Contact us
 For questions regarding the code, please contact:
