@@ -66,7 +66,7 @@ https://doi.org/10.1016/j.cma.2023.116290
 # Contact us
 For questions regarding the code, please contact:
 
-jinshuai.bai@hdr.qut.edu.au
+jinshuaibai@gmail.coom
 
 yuantong.gu@qut.edu.au
 
