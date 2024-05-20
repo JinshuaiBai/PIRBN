@@ -1,0 +1,4 @@
+tensorflow == 2.8.0
+keras == 2.8.0
+sciPy == 1.8.0
+matplotlib == 3.6.0
